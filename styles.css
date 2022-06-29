@@ -1,0 +1,35 @@
+body{
+    margin: 0px;
+    padding: 0px;
+
+}
+.titlediv{
+    justify-content: center;
+}
+.title{
+    text-align: center;
+    margin-top: 180px;
+    color: pink;
+    font-size: 30px;
+    font-family: tahoma;
+    border: solid white 2px;
+}
+
+.grid{
+    justify-content: center;
+    margin-top: 100px;
+    display: flex;
+
+    
+}
+
+.square{
+    justify-content: center;
+    width: 500px;
+    height: 500px;
+    border-radius: 250px;
+    
+}
+
+
+
