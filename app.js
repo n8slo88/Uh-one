@@ -5,7 +5,7 @@ let title = document.createElement('div')
 let titlediv = document.createElement('div')
 let audio = document.createElement('audio')
 
-audio.src = '/sound/loop.wav'
+audio.src = 'sound/loop.wav'
 audio.play()
 function playAudio(){
     audio.currentTime = 0
