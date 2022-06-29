@@ -4,8 +4,18 @@ let body = document.querySelector('body')
 let title = document.createElement('div')
 let titlediv = document.createElement('div')
 let audio = document.createElement('audio')
+let houdini = document.createElement('audio')
 
-audio.src = '/sound/loop.wav'
+houdini.src = 'sound/houdini.wav'
+
+function houdiniPlay(){
+    houdini.play()
+}
+
+setTimeout(houdiniPlay, 5000)
+setInterval(houdiniPlay, 45000)
+
+audio.src = 'sound/loop.wav'
 audio.play()
 function playAudio(){
     audio.currentTime = 0
