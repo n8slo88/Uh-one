@@ -10,19 +10,21 @@ let houdini = document.createElement('audio')
 houdini.src = 'sound/houdini.mp3'
 
 function houdiniPlay(){
-    houdini.play()
+    houdini.play();
 }
 
-setTimeout(houdiniPlay, 5000)
-setInterval(houdiniPlay, 45000)
+setTimeout(houdiniPlay, 5000);
+setInterval(houdiniPlay, 45000);
 
-audio.src = 'sound/floop.mp3'
-audio.play()
+audio.src = 'sound/floop.mp3';
+
 function playAudio(){
-    audio.currentTime = 0
-    audio.play()
+    audio.currentTime = 0;
+    audio.play();
 }
-setInterval(playAudio, 14000)
+
+audio.play();
+setInterval(playAudio, 14000);
 
 title.innerHTML='<h1>UH</h1>'
 title.classList.add('title')
