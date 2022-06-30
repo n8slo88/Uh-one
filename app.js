@@ -7,7 +7,7 @@ let audio = document.createElement('audio')
 let houdini = document.createElement('audio')
 
 
-houdini.src = 'sound/houdini.wav'
+houdini.src = 'sound/houdini.mp3'
 
 function houdiniPlay(){
     houdini.play()
@@ -16,7 +16,7 @@ function houdiniPlay(){
 setTimeout(houdiniPlay, 5000)
 setInterval(houdiniPlay, 45000)
 
-audio.src = 'sound/loop.wav'
+audio.src = 'sound/floop.mp3'
 audio.play()
 function playAudio(){
     audio.currentTime = 0
