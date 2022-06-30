@@ -42,8 +42,7 @@ function playAudio(){
     audio.currentTime = 0;
     audio.play();
 }
-
-audio.play();
+playAudio()
 setInterval(playAudio, 14000);
 
 //change background color
