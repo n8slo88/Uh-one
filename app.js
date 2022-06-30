@@ -6,8 +6,27 @@ let titlediv = document.createElement('div')
 let audio = document.createElement('audio')
 let houdini = document.createElement('audio')
 
+title.innerHTML='<h1>UH</h1>'
+title.classList.add('title')
 
+audio.src = 'sound/floop.mp3';
 houdini.src = 'sound/houdini.mp3'
+square.classList.add('square')
+grid.appendChild(square)
+square.appendChild(title)
+
+body.style.backgroundColor='#4C3A51'
+
+let colorArray = ['4C3A51','774360','B25068','E7AB79']
+
+let redvalue = 255
+let greenvalue = 0
+let bluevalue = 0
+
+body.style.backgroundColor='#4C3A51'
+
+
+/// play houdini audio
 
 function houdiniPlay(){
     houdini.play();
@@ -16,7 +35,8 @@ function houdiniPlay(){
 setTimeout(houdiniPlay, 5000);
 setInterval(houdiniPlay, 45000);
 
-audio.src = 'sound/floop.mp3';
+
+//play background audio
 
 function playAudio(){
     audio.currentTime = 0;
@@ -26,22 +46,13 @@ function playAudio(){
 audio.play();
 setInterval(playAudio, 14000);
 
-title.innerHTML='<h1>UH</h1>'
-title.classList.add('title')
+//change background color
 
-square.classList.add('square')
-grid.appendChild(square)
-square.appendChild(title)
-
-body.style.backgroundColor='#4C3A51'
-
-let colorArray = ['4C3A51','774360','B25068','E7AB79']
 
 function randomColor(){
    let bcolor = Math.floor(Math.random() * 4)
    console.log(colorArray[bcolor])
    body.style.backgroundColor = "#"+`${colorArray[bcolor]}`
-   
 }
 
 function backTimer(){
@@ -50,13 +61,7 @@ function backTimer(){
 
 backTimer()
 
-body.style.backgroundColor='#4C3A51'
-
-
-let redvalue = 255
-let greenvalue = 0
-let bluevalue = 0
-
+//change circle color
 
 function goBlue(){
     function subtract(){
@@ -177,65 +182,3 @@ function goRed(){
     }
 }
 goRed()
-
-
-//  for loop below:
-
-// let array=[]
-
-// for ( let i = 0; i<55; i++){
-//    array.push(i)
-// }
-// console.log(array)
-
-//for of loop
-
-// const names =["harry", "ross", "red", "aark"]
-// names.push('gor')
-// function go(){
-//     for (name of names)  console.log(name);
-// }
-// go()
-
-//while loop  (will crash)
-
-// let i =0
-// while (i<55){
-//     console.log(i)
-//     add()
-// }
-
-// function add(){
-//     i++
-// }
-// let i = 0
-// switch (i){
-//     case 0:
-//         console.log("correct")
-//         break;
-//     case 255:
-//         console.log("okay")
-//         break;
-//     default:
-//         console.log("none")
-// }
-
-
-// setTimeout(okay, 2000)
-
-// function okay(){
-//     for (i;i<5;i++){
-//         console.log(i)
-//     }
-// }
-
-
-
-
-
-
-
-
-
-
-
