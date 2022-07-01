@@ -42,7 +42,10 @@ function playAudio(){
     audio.currentTime = 0;
     audio.play();
 }
-playAudio()
+document.body.addEventListener('mousemove', ()=>{
+    playAudio();
+})
+
 setInterval(playAudio, 14000);
 
 //change background color
